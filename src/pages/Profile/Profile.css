@@ -1,0 +1,208 @@
+.profile{
+    /* background: var(--primary-blue); */
+    min-height: 100vh;
+    max-height: max-content;
+    animation: appear 300ms ease-in-out;
+    font-size: 1.03rem;
+}
+.profile .icon{
+    color: var(--primary-clr-100);
+}
+.profile .btn{
+    font-weight: 600;
+}
+.card-title{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 0.87rem;
+    /* border: 2px solid red; */
+}
+.card-info{
+    display: flex;
+    align-items: center;
+}
+.value{
+    color: #444;
+}
+.profile-cover{
+    
+}
+.cover-image{
+    width: 100%;
+    height: 45vh;
+    object-fit: cover;
+}
+.profile-info{
+    display: flex;
+    gap: 0 2em;
+    width: 80%;
+    margin: auto;
+}
+.profile-info-right, .profile-info-left{
+    flex: 1;
+    /* border: 3px solid red; */
+    transform: translateY(-10%);
+    z-index: 2;
+    
+}
+.profile-info-left{
+    flex: 1;
+}
+
+/* .contact-info-top{
+    background: var(--primary-blue-light) ;
+} */
+.basic-info{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    
+}
+.profile-image-container{
+    position: relative;
+}
+.profile-image{
+    display: block;
+    width: 100px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 1em auto ;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+}
+.profile-edit-btn{
+    position: absolute;
+    bottom: 15px;
+    right: 0px;
+    background: var(--primary-green-100);
+    color: var(--primary-green);
+    padding: 0.1em !important;
+    border: 3px solid var(--primary-green);
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+.connections{
+    color: var(--primary-btn-blue);
+    cursor: pointer;
+}
+.connections:hover{
+    color: var(--primary-clr-100);
+
+}
+.course-info{
+    margin: 1em auto;
+}
+.course-info > *{
+    display: block;
+    text-align: center;
+}
+.contact-info{
+    background-color: #fff;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    margin: 2em auto;
+}
+.contact-info-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    border-bottom: 1px solid rgb(179, 177, 177);
+}
+.contact-info-bottom{
+    padding: 1em 2em;
+}
+.contact-info-bottom >*{
+    margin: 1em auto;
+}
+.other-info{
+    background-color: #fff;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    margin: 2em auto;
+    /* padding: 1em; */
+}
+.other-info-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em ;
+    border-bottom: 1px solid rgb(179, 177, 177);
+}
+.other-info-bottom{
+    padding: 1em 2em;
+}
+.other-info-bottom > *{
+    margin: 1em auto;
+    display: flex;
+    align-items: center;
+}
+
+
+.profile-info-right{
+    flex: 2;
+}
+
+.summary{
+    background-color: #fff;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    /* margin-top: 2em; */
+}
+.summary-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em ;
+    border-bottom: 1px solid rgb(179, 177, 177);
+}
+.summary-bottom{
+    padding: 1em 2em;
+}
+.summary-value{
+    
+    color: var(--primary-clr-100);
+}
+.education{
+    background-color: #fff;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    margin-top: 2em ;
+
+}
+.edu-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em ;
+    border-bottom: 1px solid rgb(179, 177, 177);
+}
+
+.edu-bottom{
+    padding: 3em 4em;
+
+}
+.edu-bottom >*{
+    display: block;
+    margin: 0.5em auto;
+}
+.work-experience{
+    background-color: #fff;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    margin-top: 2em ;
+}
+.work-exp-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em ;
+    border-bottom: 1px solid rgb(179, 177, 177);
+}
+.work-exp-bottom{
+    padding: 1em 2em;
+}
+
+/* media query */
+@media (max-width:765px) {
+    .profile-info {
+        flex-direction: column;
+    }
+    .cover-image{
+        max-height: 200px;
+    }
+}

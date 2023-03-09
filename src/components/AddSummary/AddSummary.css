@@ -1,0 +1,79 @@
+.add-event-container{
+    width: 95%;
+    max-width: 600px;
+    margin-top: 2em;
+    margin-inline: auto;
+    border: 1px solid #ccc;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 2vw;
+    border-radius: 5px;
+}
+.addEvent{
+    /* border: 2px solid red; */
+}
+.addEvent > div {
+    margin-bottom: 0.5em;
+}
+.addEvent > div > *{
+    display: block;
+}
+.addEvent > div > label {
+    font-size: 0.9rem;
+}
+.addEvent input, .addEvent textarea{
+    display: inline-block;
+    padding: 0.8em 0.8em;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    transition: transform 150ms linear;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    font-weight: 400;
+    background: inherit;
+}
+.addEvent textarea  {
+    height: max-content;
+    font-size: 1rem;
+    resize: none;
+}
+.file-container > label{
+    display: flex;
+    align-items: center;
+}
+.file{
+    cursor: pointer;
+    /* border: 2px solid red; */
+    width: max-content;
+    padding: 0.4em;
+    border-radius: 5px;
+    background: var(--primary-blue-200);
+}
+.post-btn{
+    margin: auto;
+    width: 30%;
+    text-align: center;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.shareImageContainer{
+    position: relative;
+    max-width: 300px;
+    max-height: 200px;
+    margin: auto;
+}
+.shareImage{
+    display: block;
+    object-fit: contain;
+    width: 100%;
+}
+.shareCancelImage{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border: 2px solid #000;
+    border-radius: 100vw;
+    background-color: #fff;
+    color: #000;
+}

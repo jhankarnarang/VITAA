@@ -1,0 +1,211 @@
+.navbar{
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+    border-bottom: 1px solid #ddd;
+    /* background: var(--primary-clr); */
+    /* color: var(--primary-bg); */
+    /* box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28); */
+}
+.navbar-active{
+    /* margin: auto;
+    background: #fff;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    animation: slide-down 400ms ease; */
+    /* border: 2px solid red; */
+}
+.navbar-active a{
+    /* color: #fff !important; */
+    /* color: var(--primary-bg) !important; */
+
+}
+.navbar a{
+    display: block;
+    text-decoration: none;
+    color: var(--primary-clr-100);
+    padding: 0.2em 0.5em;
+    /* border: 2px solid red; */
+    text-align: center;
+    /* color: var(--primary-bg) !important; */
+
+}
+.navbar a:hover{
+    /* background: #f0f0f0; */
+    border-radius: 5px;
+}
+.navbarLeft,.navbarRight,.navbarCenter{
+    /* border: 2px solid red; */
+}
+.navbarLeft{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.hamburgurBtn{
+    margin-right: 1em;
+    display: none;
+    transition: background 200ms ease;
+    padding: 0.3em;
+}
+.hamburgurBtn:hover{
+    background: var(--primary-clr-100);
+}
+.navbarCenter{
+    flex: 2;
+    margin: 0 0.6em;
+}
+.navbar-links{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    /* border: 2px solid red; */
+    margin-left: auto;
+
+}
+.navbar-link{
+    margin-right: 0.1em;
+    /* border: 2px solid blue; */
+
+}
+
+.active{
+    /* color: #3db166 !important; */
+    /* border-bottom: 4px solid #3db166; */
+    /* padding-bottom: 0.4em; */
+    /* background: #f0f0f0; */
+    border-radius: 5px;
+    font-weight: 600; 
+    /* color: var(--primary-blue) !important; */
+}
+.pactive{
+    border: 2px solid var(--primary-green);
+    padding: 0;
+    border-radius: 50%;
+    background: red;
+}
+.navbarRight{
+    flex: 0.1;
+    position: relative;
+}
+.navbar-profile-img{
+    width: 45px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    transition: outline 100ms ease;
+}
+.navbar-profile-img:hover{
+    
+    outline: 2px solid var(--primary-blue);
+}
+.profile-options{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    background: var(--primary-bg);
+    font-size: 0.9rem;
+    
+    /* height: 10vh; */
+    /* min-width: 100px; */
+    /* position: absolute; */
+    /* right: 5%; */
+    /* top: 100%; */
+    /* display: none; */
+    z-index: 100000;
+    /* animation: appear 200ms ease; */
+    border-radius: 5px;
+    border: 0.5px solid #ddd;
+}
+.profile-options > ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.profile-options a{
+    text-decoration: none;
+}
+.profile-options > ul >  li > a {
+    display: flex;
+    align-items: center;
+    padding-right: 5em;
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    color: #555 !important;
+}
+.profile-options > ul >  li > a:hover {
+    transition: background 200ms ease;
+    background: var(--primary-grey-200);
+    color: var(--primary-clr) !important;
+}
+.show-options{
+    display: block;
+}
+
+.profile-options .profile-image{
+    width: 10vw;
+}
+
+@media (max-width: 600px) {
+    
+    .navbar-links{
+        display: none;
+    }
+    
+    .navbar-link{
+        width: 100%;
+        padding-left: 0.5em;
+    }
+    .navbar a{
+        text-align: left;
+    }
+    .navbar a:hover{
+        background-color: var(--primary-blue-200);
+        width: 100%;
+    }
+    .hamburgurBtn{
+        display: flex;
+        /* background-color: var(--primary-clr); */
+        color: var(--primary-bg);
+    }
+    #hidden{
+        position: absolute;
+        top: 8vh;
+        left: 0;
+        background: #fff;
+        display: flex;
+        width: 100%;
+        max-width: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        animation: slide-down 350ms ease-in-out;
+        /* box-shadow: 0 4px 2px -2px rgba(0,0,0,.2); */
+        border-bottom: 2px solid #cdcdcd;
+        border-top: 1px solid #ddd;
+        z-index: 998;
+        background-color: var(--primary-clr);
+        color: var(--primary-bg);
+    }
+    .navbar-link{
+        margin: 0.4em 0;
+    }
+    .active{
+        padding-bottom: 0;
+    }
+}
+
+@keyframes slide-down {
+    0% {transform: translateY(-100%); opacity: 0;}
+    100% {transform: translateY(0); opacity: 1;}
+}

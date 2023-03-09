@@ -1,0 +1,116 @@
+.action-card{
+    display: flex;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 1px 1px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    font-size: 1rem;
+    background: #fff;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1em;
+    align-items: center;
+    margin:0.15em 0em;
+    padding:0.5em;
+}
+.action-type,.admin-name,.action-timestamp{
+    flex: 1 1 12em;
+    vertical-align: middle;
+}
+.delete-record{
+    flex:0 1 1em;
+    
+}
+.delete-btn{
+    padding:5px;
+}
+.delete-btn svg{
+    max-height:24px;
+    max-width: 24px;
+}
+.action-type-desc svg{
+    margin:0em 0.5em;
+    vertical-align: middle;
+}
+.action-type-desc{
+    display: inline;
+    vertical-align: middle;
+}
+.action-timestamp{
+    font-size: 0.85em;
+}
+.action-timestamp svg{
+    vertical-align: middle;
+}
+.msg-button{
+    /* position: absolute;
+    top: 50%;
+    right: 1%; */
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    padding:0.3em;
+    border: 2px solid var(--primary-bg);
+    aspect-ratio: 1;
+    transform: translateY(-80%);
+    background: var(--primary-green);
+    color: #fff;
+}
+
+@media (max-width:820px) {
+    .action-card{
+        font-size:0.85em;
+    } 
+    .action-type,.admin-name,.action-timestamp{
+        flex: 1 1 4em;
+        vertical-align: middle;
+    }
+    .action-type{
+        flex-grow:1.5;
+    }
+    svg{
+        max-width:1.1rem;
+        max-height: 1.1rem;
+    }
+    .action-type-desc svg{
+        margin:0em 0.1em;
+        vertical-align: middle;
+    }
+    .delete-btn{
+        padding:0.2em;
+        margin-right:0.2em;
+    }
+    
+}
+
+@media (max-width: 675px) {
+    .action-card{
+        width:100%;
+    }
+}
+
+@media (max-width: 370px) {
+    .action-card{
+        font-size: 0.8rem;
+        width:100%;
+    }
+    .action-type,.admin-name,.action-timestamp{
+        flex: 1 1 4em;
+        vertical-align: middle;
+    }
+    .action-type{
+        flex-grow:3;
+    }
+    svg{
+        max-width:0.9rem;
+        max-height: 0.9rem;
+    }
+    .action-type-desc svg{
+        margin:0em 0.1em;
+        vertical-align: middle;
+    }
+    .delete-btn{
+        padding:0.2em;
+        margin-right:0.2em;
+    }
+    .delete-btn svg{
+        max-width: 0.9em;
+        max-height: 0.9em;
+    }
+}

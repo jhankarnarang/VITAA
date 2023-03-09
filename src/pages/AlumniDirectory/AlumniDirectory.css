@@ -1,0 +1,93 @@
+.alumni-directory{
+    width: 90%;
+    max-width: 1240px;
+    margin: 2em auto;
+    display: flex;
+    gap: 0 1em;
+    animation: appear 300ms ease-in-out;
+    /* border: 2px solid red; */
+}
+.alumni-categories {
+    flex: 1.5;
+}
+.alumni-directory .category{
+    font-size: 0.9rem;
+}
+.filter-alumnis {
+    display: flex;
+    align-items: center;
+    gap:  1em;
+    flex-direction: column;
+    margin-top: 2em;
+    border-top: 1px solid #bbb;
+    padding-top: 1em;
+}
+.filter-heading{
+    align-self: flex-start;
+}
+.filter-options{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    
+}
+.filter-option{
+    padding: 0.5em 1em;
+    border: 1px solid #bbb;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    background-color: var(--primary-bg);
+}
+
+.filter-option option{
+    padding:3em;
+    height: 8vh;
+    display: block;
+}
+/* .filter-option :{
+    outline: none;
+} */
+.alumni-list{
+    flex: 3;
+    /* border: 2px solid black; */
+    margin: 1em auto;
+}
+.member-count{
+    background-color: var(--primary-blue-200);
+    color: var(--primary-blue);
+    padding: 1em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+}
+.member-count .icon{
+    font-size: 30px !important;
+}
+.alumni-profiles{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    
+}
+
+
+@media (max-width:810px) {
+    
+}
+
+@media (max-width: 675px) {
+    .alumni-directory{
+        flex-direction: column;
+    }
+    .alumni-profiles{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 370px) {
+    .alumni-profiles{
+        grid-template-columns: 1fr 1fr;
+    }
+}

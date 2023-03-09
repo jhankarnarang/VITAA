@@ -1,0 +1,126 @@
+.story{
+    /* min-height: 30vh; */
+    /* display: flex; */
+    padding: 1em;
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+    border: 1px solid #bfc7cc;
+    /* margin: 1.5em auto; */
+    background: var(--primary-bg);
+    border-radius: 5px;
+    animation: appear 300ms ease;
+}
+/**story top**/
+.story-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5em ;
+}
+.story-top-left,.story-top-right{
+    display: flex;
+    align-items: center;
+}
+.story-top-left{
+    display: flex;
+    align-items: center;
+}
+.post-date{
+    font-size: 0.8rem;
+}
+.story-profile-image{
+    width: 32px !important;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    object-fit: cover;
+    min-width: 32px;
+}
+.story-username{
+    display: flex;
+    align-items: center;
+    display: inline-block;
+}
+.story-username:hover{
+    text-decoration: underline;
+}
+.user-type{
+    font-size: 0.8rem;
+    color: #555;
+    margin-left: 0.5em;
+}
+/**story bottom**/
+.story-bottom{
+    display: flex;
+    gap: 0 1em;
+    /* border: 2px solid red; */
+}
+.story-image-container{
+    flex: 0.8;
+    display: flex;
+    
+    /* align-items: center; */
+    /* border: 2px  solid red; */
+}
+.story-image{
+    display: block;
+    width: 100%;
+    /* height: 100%; */
+    object-fit: contain;
+    max-height: 40vh;
+    background: var(--primary-grey-100);
+    min-height: 25vh;
+    /* border: 2px  solid red; */
+}
+.story-info{
+    flex: 1;
+    /* border: 2px solid red; */
+    /* display: flex; */
+    /* align-items: center; */
+}
+.story-title{
+    display: block;
+    font-weight: 600;
+    font-size: 1.05rem;
+    margin-bottom: 0.5em;
+    color: var(--primary-clr) !important;
+}
+.story-title:hover{
+    text-decoration: underline 1.5px;
+}
+.story-description{
+    font-size: 0.85rem;
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 4; /* number of lines to show */
+           line-clamp: 4; 
+   -webkit-box-orient: vertical;
+}
+.story-date,.story-location{
+    display: flex;
+    align-items: center;
+    margin-top: 0.8em;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: #444;
+}
+
+.view-btn{
+    /* border: 2px solid black; */
+    margin-top: 1.5em;
+    margin-left: auto;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+}
+@media (max-width: 600px) {
+    .story-bottom{
+        flex-direction: column-reverse;
+        gap: 0.5em 0;
+    }
+    .story-details{
+        font-size: 0.8rem;
+    }
+    .story-title{
+        font-size: 0.95rem;
+    }
+}

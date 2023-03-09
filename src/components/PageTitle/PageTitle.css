@@ -1,0 +1,15 @@
+.page-title{
+    height: 10vh;
+    width: 100%;
+    background-color:var(--primary-blue-100);
+    display: flex;
+}
+.page-title .title{
+    font-size: 2em;
+    display: inline-block;
+    justify-self: center;
+    align-self: center;
+    /* border: 2px solid red; */
+    margin-inline: auto;
+    color: var(--primary-clr-200);
+}

@@ -1,0 +1,137 @@
+
+.all-user-details{
+    animation: appear 300ms ease-in-out;
+    display:flex;
+    width: 90%;
+    max-width: 1240px;
+    margin: 2em auto;
+    gap: 0 1em;
+    min-height: 100vh;
+    max-height: max-content;
+}
+.user-details{
+    animation: appear 300ms ease-in-out;
+    flex:3 1;
+}
+.main-content{
+    display:grid;
+    grid-template-columns:0.7fr 0.3fr;
+    gap:1em;
+}
+.profile-pane{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    height: fit-content;
+}
+.left-pane{
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+}
+.left-pane div{
+    font-size: 1.03rem;
+    
+}
+.left-pane svg{
+    height: 1em;
+    width: 1em;
+    display: inline;
+    vertical-align: middle;
+}
+.academic-card{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+}
+.contact-card{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+}
+.misc-card{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.card-heading{
+    border-bottom:1px solid rgb(179, 177, 177);
+    font-size:1.03rem;
+    font-weight: bold;
+    padding:1em;
+}
+.card-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1em;
+    padding: 1em;
+    align-items: center;
+}
+.card-content >*{
+    flex:1 0 45%;
+}
+.content-table tr{
+    max-width: fit-content;
+}
+.profile-img{
+    margin-bottom: 0.5em;
+    aspect-ratio: 1.5;
+}
+.profile-img img{
+    width:100%;
+    display: block;
+}
+.profile-pane-text{
+    padding:1em;
+}
+.action-controls{
+    display:flex;
+    gap:0.5em;
+    margin-top:0.5em;
+    width: 100%;
+}
+.profile-pane svg{
+    vertical-align: middle;
+    margin-right:0.2em;
+}
+.action-controls svg{
+    max-height: 0.7em;
+}
+.action-controls button{
+    flex-grow: 1;
+    justify-content: center;
+}
+.errorMsg{
+    color: red;
+    font-size: 0.8em;
+}
+@media (max-width:1250px){
+    .main-content{
+        gap: 0.5em;
+        font-size:0.9rem;
+    }
+    .profile-pane-text{
+        padding:0.5em;
+    }
+    .left-pane svg, .profile-pane svg{
+        height:0.8em;
+        width:0.8em;
+    }
+}
+@media (max-width:1150px){
+.card-content >*{
+    flex:1 0 50%;
+}
+.main-content{
+    grid-template-columns: 0.68fr 0.32fr;
+}
+}
+@media(max-width:950px){
+    .all-user-details{
+        flex-direction: column;
+    }
+}
+@media(max-width:630px){
+    .main-content{
+        grid-template-columns: 1fr;
+        font-size:1.03rem;
+    }
+    .profile-pane{
+        grid-row-start:1;
+    }
+}

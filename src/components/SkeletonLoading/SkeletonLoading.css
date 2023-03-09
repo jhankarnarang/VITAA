@@ -1,0 +1,59 @@
+.skeleton{
+    border: 1px solid var(--primary-grey-200);
+    width: 90%;
+    margin: 2em auto;
+    border-radius: 5px;
+}
+.skeleton span, .skeleton-top >*, .event-image-skeleton{
+    animation: skeleton-loading 0.7s linear infinite alternate;
+}
+.skeleton-top{
+    display: flex;
+    align-items: center;
+}
+.profile-pic-skeleton{
+    width: 32px;
+    aspect-ratio: 1;
+    background: var(--primary-grey-200);
+    border-radius: 50%;
+    margin: 0.5em;
+}
+.username-skeleton{
+    width: 30%;
+    height: 1.5vh;
+    background: var(--primary-grey-200);
+    border-radius: 5px;
+}
+.skeleton-bottom{
+    display: flex;
+}
+.event-image-skeleton{
+    width: 40%;
+    height: 20vh;
+    background: var(--primary-grey-200);
+    margin: 0.4em;
+    /* border-radius: 5px; */
+}
+.event-text-skeleton{
+    width: 50%;
+}
+.text-skeleton{
+    display: block;
+    width: 95%;
+    height: 1.5vh;
+    background: var(--primary-grey-200);
+    margin: 0.4em 0;
+}
+.s-1{
+    width: 60%;
+}
+
+@keyframes skeleton-loading {
+    0%{
+        background-color: var(--primary-grey-200);
+    }
+
+    100%{
+        background-color: var(--primary-bg);
+    }
+}

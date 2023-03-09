@@ -1,0 +1,9 @@
+.admin-actions {
+    flex: 1.5 1;
+    flex-basis:0;
+}
+@media (max-width: 500px) {
+    .admin-actions{
+        margin:0em 0.5em;
+    }
+}
